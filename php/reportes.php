@@ -11,7 +11,7 @@
 <div class="row">
 <div class="col-md-6">
 		<h2>Reportes</h2>
-
+		<img src="../grafics/Reporte.jpg">
 	<form role="form" name="Salir" action="../login.php" method="post">
 	<button type="submit" class="btn btn-default">Log Out</button>
 	</form>

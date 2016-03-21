@@ -10,7 +10,7 @@
 <div class="row">
 <div class="col-md-6">
 		<h2>Monitoria</h2>
-
+		<img src="../grafics/Monitoria.jpg">
 	<form role="form" name="Salir" action="../login.php" method="post">
 	<button type="submit" class="btn btn-default">Log Out</button>
 	</form>
