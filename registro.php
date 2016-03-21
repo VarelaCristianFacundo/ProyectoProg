@@ -32,7 +32,11 @@
 		    <label for="confirm_password">Confirmar Contrase&ntilde;a</label>
 		    <input type="password" class="form-control" id="confirm_password" name="confirm_password" placeholder="Confirmar Contrase&ntilde;a">
 		  </div>
-
+		  <form method="post" action="accion.php" enctype="multipart/form-data">
+			Ingresa el archivo:
+			<input name="imagen" type="file" />
+		  </form>
+		  
 		  <button type="submit" class="btn btn-default">Registrar</button>
 		</form>
 		</div>
