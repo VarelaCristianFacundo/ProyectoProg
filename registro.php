@@ -36,7 +36,6 @@
 			Ingresa el archivo:
 			<input name="imagen" type="file" />
 		  </form>
-		  
 		  <button type="submit" class="btn btn-default">Registrar</button>
 		</form>
 		</div>
