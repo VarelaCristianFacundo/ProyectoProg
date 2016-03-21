@@ -1,28 +1,24 @@
-<?php
 
-if(!empty($_POST)){
-	if(isset($_POST["username"]) &&isset($_POST["password"])){
-		if($_POST["username"]!=""&&$_POST["password"]!=""){
-			include "conexion.php";
-			
-			$user_id=null;
-			$sql1= "select * from user where (username=\"$_POST[username]\" or email=\"$_POST[username]\") and password=\"$_POST[password]\" ";
-			$query = $con->query($sql1);
-			while ($r=$query->fetch_array()) {
-				$user_id=$r["id"];
-				break;
-			}
-			if($user_id==null){
-				print "<script>alert(\"Acceso invalido.\");window.location='../login.php';</script>";
-			}else{
-				session_start();
-				$_SESSION["user_id"]=$user_id;
-				print "<script>window.location='../home.php';</script>";				
-			}
-		}
-	}
-}
+<html>
+	<head>
+		<title>Bienvenido!</title>
+		<link rel="stylesheet" type="../text/css" href="../bootstrap/css/bootstrap.min.css">
+	</head>
+	<body>
+	<?php include "../php/navbarLogueado.php"; ?>
+	<div class="container">
+	<div class="row">
+	<div class="col-md-12">
+			<ul type="none">
+			</ul>
 
-
-
-?>
+	<form role="form" name="Salir" action="../login.php" method="post">
+	<button type="submit" class="btn btn-default">Log Out</button>
+	</form>
+	</div>
+	</div>
+	</div>
+		
+	<script src="js/valida_login.js"></script>
+	
+</html>
