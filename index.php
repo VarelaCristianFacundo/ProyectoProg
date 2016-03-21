@@ -8,6 +8,7 @@ session_start();
 	</head>
 	<body>
 	<?php include "php/navbar.php"; ?>
+	<img src="Fondo de inicio.jpg">
 	<div class="container">
 	<div class="row">
 	<div class="col-md-12">
@@ -17,5 +18,6 @@ session_start();
 	</div>
 	</div>
 	</div>
+		
 	</body>
 </html>
